@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+</head>
+<body>
+    nombre: {{nombre}}
+
+    {%for nota in notas%}
+        
+        {% if nota < 6 %}
+            <p style="color : red">La nota es: {{nota}}</p>
+        {%else%}
+            <p style="color : rgb(0, 255, 0)">La nota es: {{nota}}</p>
+        {% endif %}
+
+    {% endfor %}
+</body>
+</html>
